@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Editor from './components/Editor';
+
 
 function App() {
   return (
     <>
-      <textarea id="editor"></textarea>
+      <h1>Markdown Previewer</h1>     
+      <Editor />      
     </>
   );
 }
