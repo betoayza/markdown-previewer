@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Preview from "./Preview";
-import MarkDown from 'markdown-to-jsx';
 
 const Editor = () => {
   const [text, setText] = useState('');
@@ -30,7 +29,7 @@ const Editor = () => {
   return (
     <>
       <h2>Editor</h2>
-      <textarea id="editor" placeholder={text} onChange={handleChange} />
+      <textarea id="editor" value={text} onChange={handleChange} />
       <Preview text={text} />
     </>
   );
