@@ -2,19 +2,15 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 
 const Preview = ({ text }) => {
-  // const [newText, setNewText] = useState(text);
-  console.log("El texto pasado es: ", text);
-
-  // useEffect(() => {
-    //let replacedText = text.replace("\n", "");
-    // setNewText(replacedText);
-  // }, [text]);
+  console.log("El nuevo texto es: ", text);
+  console.log("El texto pasado original es: ", text);
+  text = text.replace(/\n|\r/g, "  \n");
 
   return (
     <>
       <h2>Preview</h2>
-      <div id="preview">       
-          <ReactMarkdown children={text} />        
+      <div id="preview">
+        <ReactMarkdown children={text} />
       </div>
     </>
   );

@@ -22,7 +22,7 @@ const Editor = () => {
       .catch(error=>error)
   }, [])  
 
-  const handleChange = (e) => {
+  const handleChange = (e) => {    
     setText(e.target.value);
   };
 
