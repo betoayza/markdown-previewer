@@ -5,8 +5,10 @@ import Editor from './components/Editor';
 function App() {
   return (
     <>
-      <h1>Markdown Previewer</h1>     
-      <Editor />      
+      <div>
+        <h1>Markdown Previewer</h1>     
+        <Editor />     
+      </div> 
     </>
   );
 }
