@@ -28,11 +28,11 @@ const Editor = () => {
 
   return (
     <>
-      <div>
-        <h2>Editor</h2>
+      <div id="editor-div">
+        <h2 id="editor-h2">Editor</h2>
         <textarea id="editor" value={text} onChange={handleChange} />
-        <Preview text={text} />
       </div>
+        <Preview text={text} />
     </>
   );
 };

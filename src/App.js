@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Markdown Previewer</h1>     
+        <h1 id="app-title">Markdown Previewer</h1>     
         <Editor />     
       </div> 
     </>

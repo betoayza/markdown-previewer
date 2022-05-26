@@ -8,7 +8,7 @@ const Preview = ({ text }) => {
 
   return (
     <>
-      <h2>Preview</h2>
+      <h2 id="preview-h2">Preview</h2>
       <div id="preview">
         <ReactMarkdown children={text} />
       </div>
